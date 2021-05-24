@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+.navbar-brand {
+  /* margin-left: 25px; */
+  font-weight: 500;
+  font-family: "Caveat";
+  font-size: 25px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* margin-right: 25px; */
+}
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+}
+
+nav ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  color: white !important;
+  font-weight: lighter;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  font-weight: bold;
+  border-top: 3px solid;
+  color: yellowgreen !important;
+}
+.navbar-nav > li > a:hover {
+  border-top: 3px solid;
+  color: yellowgreen !important;
+}
