@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
+import project_data from "./content/project_data";
 
 class App extends Component {
   render() {
@@ -24,13 +25,6 @@ class App extends Component {
                   value_area: 900,
                 },
               },
-              // shape: {
-              //   type: 'circle',
-              //   stroke:{
-              //       width: 5,
-              //       color: "whitesmoke"
-              //   }
-              // }
             },
           }}
         />
@@ -39,7 +33,7 @@ class App extends Component {
         <About />
         <Experience />
         <Skills />
-        <Projects />
+        <Projects data={project_data} />
         <Contact />
         <div>
           <p>test</p>
