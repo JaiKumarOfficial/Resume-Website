@@ -2,7 +2,8 @@ const project_data = [
   {
     id: 1,
     title: "Tweetal",
-    icon: true,
+    icon: "faTwitter",
+    iconColor: "blue",
     detail: `This is an Analytical tool which uses Twitter API to perform
         certain Analysis on twitter users which can be further used for
         marketing.`,
@@ -18,6 +19,8 @@ const project_data = [
   {
     id: 2,
     title: "Elder Library",
+    icon: "faBook",
+    iconColor: "black",
     detail: `This is an Analytical tool which uses Twitter API to perform
         certain Analysis on twitter users which can be further used for
         marketing.`,
@@ -26,6 +29,8 @@ const project_data = [
   {
     id: 3,
     title: "Http Load Balancer",
+    icon: "faBalanceScale",
+    iconColor: "black",
     detail: `This is an Analytical tool which uses Twitter API to perform
         certain Analysis on twitter users which can be further used for
         marketing.`,
@@ -34,6 +39,8 @@ const project_data = [
   {
     id: 4,
     title: "Poker Game",
+    icon: "faCoins",
+    iconColor: "black",
     detail: `This is an Analytical tool which uses Twitter API to perform
         certain Analysis on twitter users which can be further used for
         marketing.`,

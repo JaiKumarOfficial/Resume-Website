@@ -9,7 +9,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
-import project_data from "./content/project_data";
+import project_data from "./data/project_data";
 
 class App extends Component {
   render() {
@@ -35,9 +35,6 @@ class App extends Component {
         <Skills />
         <Projects data={project_data} />
         <Contact />
-        <div>
-          <p>test</p>
-        </div>
       </div>
     );
   }

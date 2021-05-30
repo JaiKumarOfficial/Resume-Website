@@ -2,7 +2,6 @@ import React from "react";
 import Project_cards from "./Project_cards";
 
 function Projects(props) {
-  console.log(props.data);
   const project_cards = props.data.map((project) => {
     return <Project_cards key={project.id} data={project} />;
   });
