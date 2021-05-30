@@ -5,7 +5,8 @@ import emailjs from "emailjs-com";
 import validator from "validator";
 
 function Contact() {
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [contactMessageError, setContactMessageError] = useState("");
 
@@ -24,17 +25,18 @@ function Contact() {
     if (email_from && contact_message) {
       emailjs
         .sendForm(
-          process.env.SERVICE_ID || "service_am7qajv",
-          process.env.TEMPLATE_ID || "template_bny9h9h",
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
           e.target,
-          process.env.USER_ID || "user_nkvBTKIYUzD0q7a6zbuEU"
+          process.env.REACT_APP_USER_ID
         )
         .then(
           (result) => {
-            setMessage(true);
+            setMessage("Thanks, I'll reply ASAP!");
           },
           (error) => {
-            console.log(error.text);
+            setError(true);
+            setMessage("Something went wrong");
           }
         );
     }
@@ -62,7 +64,13 @@ function Contact() {
               ""
             )}
             <button type="submit">Submit</button>
-            {message && <span>Thanks, I'll reply ASAP!</span>}
+            {message ? (
+              <span className={error ? "text-danger" : "text-success"}>
+                {message}
+              </span>
+            ) : (
+              ""
+            )}
           </form>
         </div>
       </div>
