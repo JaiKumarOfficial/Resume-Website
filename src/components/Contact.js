@@ -51,26 +51,42 @@ function Contact() {
         <div className="right">
           <h2>Contact</h2>
           <form onSubmit={handleSubmit}>
-            <input name="from_name" type="text" placeholder="Email" />
-            {emailError ? (
-              <span className="text-danger">{emailError}</span>
-            ) : (
-              ""
-            )}
-            <textarea name="message" placeholder="Message"></textarea>
-            {contactMessageError ? (
-              <span className="text-danger">{contactMessageError}</span>
-            ) : (
-              ""
-            )}
-            <button type="submit">Submit</button>
-            {message ? (
-              <span className={error ? "text-danger" : "text-success"}>
-                {message}
-              </span>
-            ) : (
-              ""
-            )}
+            <div className="email-label-input">
+              <label>
+                Email*
+                {emailError ? (
+                  <span className="text-danger">{emailError}</span>
+                ) : (
+                  ""
+                )}
+              </label>
+              <input name="from_name" type="text" placeholder="Email" />
+            </div>
+            <div className="message-label-textarea">
+              <label>
+                Message*
+                {contactMessageError ? (
+                  <span className="text-danger">{contactMessageError}</span>
+                ) : (
+                  ""
+                )}
+              </label>
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <div className="submit-form">
+              <button type="submit">Submit</button>
+              {message ? (
+                <span
+                  className={
+                    error ? "submit text-danger" : "submit text-success"
+                  }
+                >
+                  {message}
+                </span>
+              ) : (
+                ""
+              )}
+            </div>
           </form>
         </div>
       </div>
