@@ -21,15 +21,15 @@ const About = () => {
           </div>
         </div>
         <div className="about-card">
-          <div style={{ height: "65%", overflow: "hidden" }}>
-            <div className="image-container">
-              <img src={image} alt="Profile Picture" />
+          <div className="image-container">
+            <div className="about-image">
+              {/* <img src={image} alt="Profile Picture" /> */}
             </div>
           </div>
-          <div style={{ height: "25%" }}>
+          <div className="about-center">
             <h4>Jai Kumar</h4>
           </div>
-          <div className="card-links" style={{ height: "10%" }}>
+          <div className="card-links">
             <a href="https://www.linkedin.com/in/jaikumar11/">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>

@@ -6,6 +6,8 @@ import reactjsImg from "../images/reactjs.svg";
 import javascriptImg from "../images/javascript.svg";
 import mysqlImg from "../images/mysql.svg";
 import nodejsImg from "../images/nodejs.svg";
+import mongodbImg from "../images/mongodb.svg";
+import flaskImg from "../images/flask.svg";
 
 const project_data = [
   {
@@ -114,6 +116,20 @@ const skills = [
     skillImg: djangoImg,
     alt: "django-image",
     skillBar: 4,
+  },
+  {
+    id: 9,
+    skill: "flask",
+    skillImg: flaskImg,
+    alt: "flask-image",
+    skillBar: 4,
+  },
+  {
+    id: 10,
+    skill: "mongodb",
+    skillImg: mongodbImg,
+    alt: "mongodb-image",
+    skillBar: 3,
   },
 ];
 
