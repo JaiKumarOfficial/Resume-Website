@@ -22,7 +22,7 @@ function Contact() {
     if (validator.isEmpty(contact_message)) {
       setContactMessageError("*Required");
     }
-    if (email_from && contact_message) {
+    if (validator.isEmail(email_from) && contact_message) {
       emailjs
         .sendForm(
           process.env.REACT_APP_SERVICE_ID,
@@ -46,7 +46,9 @@ function Contact() {
     <>
       <div id="contact" className="contact">
         <div className="left">
-          <img src={image} alt="contact-image"></img>
+          <div className="contact-left-img-wrapper">
+            <img src={image} alt="contact-image"></img>
+          </div>
         </div>
         <div className="right">
           <h2>Contact</h2>

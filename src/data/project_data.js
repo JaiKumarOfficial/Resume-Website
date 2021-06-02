@@ -133,4 +133,43 @@ const skills = [
   },
 ];
 
-export { project_data, skills };
+const timeline_data = [
+  {
+    title: "React Developer at Technoarch Softwares",
+    date: "Jan'19 - Jun'19",
+    body: "",
+    category: {
+      tag: "INTERNSHIP",
+      color: "pink",
+    },
+  },
+  {
+    title: "Graduated B.Tech. in Computer Science",
+    date: "Jul'19",
+    body: "",
+    category: {
+      tag: "EDUCATION",
+      color: "#62cd62",
+    },
+  },
+  {
+    title: "Python Developer at Techahead corp.",
+    date: "Aug'19 - Dec'19",
+    body: "",
+    category: {
+      tag: "INTERNSHIP",
+      color: "pink",
+    },
+  },
+  {
+    title: "Master's of Internetworking at Dalhousie University",
+    date: "Jan'20 - Jul'21",
+    body: "",
+    category: {
+      tag: "EDUCATION",
+      color: "#62cd62",
+    },
+  },
+];
+
+export { project_data, skills, timeline_data };

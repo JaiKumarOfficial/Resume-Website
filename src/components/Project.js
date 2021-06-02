@@ -9,7 +9,9 @@ function Projects(props) {
   return (
     <div id="projects" className="projects">
       <h1 className="title">Projects</h1>
-      <div className="projects-container">{project_cards}</div>
+      <div className="projects-right">
+        <div className="projects-container">{project_cards}</div>
+      </div>
     </div>
   );
 }

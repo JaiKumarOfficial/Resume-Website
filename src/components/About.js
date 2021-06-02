@@ -30,16 +30,32 @@ const About = () => {
             <h4>Jai Kumar</h4>
           </div>
           <div className="card-links">
-            <a href="https://www.linkedin.com/in/jaikumar11/">
+            <a
+              href="https://www.linkedin.com/in/jaikumar11/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://github.com/JaiKumarOfficial">
+            <a
+              href="https://github.com/JaiKumarOfficial"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://twitter.com/JaiKumar__">
+            <a
+              href="https://twitter.com/JaiKumar__"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.instagram.com/jaikumar11/">
+            <a
+              href="https://www.instagram.com/jaikumar11/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>

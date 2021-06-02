@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Particles from "react-particles-js";
 import About from "./components/About";
-import Experience from "./components/Experience";
+import Timeline from "./components/Timeline";
 import Skills from "./components/Skills";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
@@ -31,7 +31,7 @@ class App extends Component {
         <Navbar />
         <Header />
         <About />
-        <Experience />
+        <Timeline />
         <Skills />
         <Projects data={project_data} />
         <Contact />
