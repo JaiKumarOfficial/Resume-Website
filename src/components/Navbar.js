@@ -8,10 +8,10 @@ function Navbar() {
       <div className="container">
         <a className="navbar-brand" href="#">
           JAI KUMAR
-          <span style={{ fontSize: 15, marginLeft: 10 }}>
+          {/* <span style={{ fontSize: 15, marginLeft: 10 }}>
             {" "}
             | FullStack Developer
-          </span>
+          </span> */}
         </a>
         <button
           className="navbar-toggler"

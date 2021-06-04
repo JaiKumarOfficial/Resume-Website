@@ -11,12 +11,15 @@
 /********************************************* NAVBAR */
 
 .navbar {
-  z-index: 3;
+  width: 100vw;
+  position: fixed;
+  z-index: 4;
 }
 .navbar-brand {
   /* margin-left: 25px; */
   font-weight: 500;
-  font-family: "Caveat";
+  /* font-family: "Caveat"; */
+  font-family: "LuloCleanW01-OneBold";
   font-size: 25px;
 }
 
@@ -58,9 +61,12 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url("./images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg");
+  background: url("./images/1567665.png");
+  /* background: url("./images/home_back.jpg"); */
   background-size: cover;
-  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* opacity: 93.1%; */
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -91,9 +97,10 @@ nav ul li {
 }
 
 .btn-main-offer {
+  /* border: 1px solid white; */
   border: 1px solid #09dea5;
   padding: 10px 12px 12px 12px;
-  border-radius: 0.4rem;
+  border-radius: 1.4rem;
   color: white;
   margin: 20px;
   text-decoration: none;
@@ -196,11 +203,22 @@ nav ul li {
     font-size: 25px !important;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1044px) {
+  .about-card {
+    width: 33% !important;
+    height: 50% !important;
+    top: 25% !important;
+  }
+  .flex-child2 {
+    padding-top: 33% !important;
+  }
+}
 
 .flex-container {
   display: flex;
   position: relative;
   height: 80vh;
+  scroll-margin-top: 60px;
 }
 .flex-child1 {
   display: flex;
@@ -327,10 +345,10 @@ nav ul li {
   align-items: center;
   padding: 30px 30px 50px 30px;
   gap: 83px;
+  scroll-margin-top: 60px;
 }
 
 .timeline-container {
-  /* background-color: white; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -458,100 +476,14 @@ nav ul li {
   left: -35px;
 }
 
-/*
-.timeline-container {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-  width: 100%;
-  padding: 50px 30px;
-}
-
-.timeline-container::after {
-  background-color: rgb(211, 30, 90);
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 93%;
-}
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-self: flex-end;
-  background-color: rgb(238, 238, 238);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(43, 43, 44);
-  width: 25%;
-  padding: 10px;
-  justify-content: center;
-}
-.timeline-item:nth-child(odd) {
-  align-self: flex-start;
-  background-color: rgb(238, 238, 238);
-}
-
-.timeline-item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-.timeline-item-content::after {
-  position: absolute;
-  content: " ";
-  background-color: rgb(238, 238, 238);
-  height: 20px;
-  width: 20px;
-  transform: rotate(45deg);
-  right: calc(50% - 10px);
-  top: calc(0% - 10px);
-}
-.timeline-item:nth-child(odd) .timeline-item-content::after {
-  top: calc(100% - 10px);
-}
-
-.timeline-item-content > .tag {
-  text-transform: uppercase;
-  width: 6rem;
-  padding: 2px;
-  font-weight: bold;
-}
-
-.timeline-item-content .circle {
-  background-color: rgb(238, 238, 238);
-  border: 3px solid crimson;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  top: 265px;
-  right: calc(50% - 10px);
-  z-index: 2;
-}
-.timeline-item:nth-child(even) .timeline-item-content .circle {
-  top: -171px;
-  right: calc(50% - 10px);
-  z-index: 2;
-}
-
-.timeline-date {
-  text-align: left;
-  font-weight: bold;
-} */
-
 /* ******* SKILLS ****** */
 @media (max-width: 767px) {
   .skills {
     height: 100% !important;
   }
-  /* .skills-container {
-    flex-direction: column !important;
-    flex-wrap: nowrap !important;
-  } */
+  .right {
+    padding: 40px 0 !important;
+  }
   .skill-card {
     flex: 1 1 50% !important;
   }
@@ -579,10 +511,11 @@ nav ul li {
   display: flex;
   flex-direction: column;
   height: 85vh;
-  padding: 20px;
+  padding: 30px;
   gap: 10px;
   color: white;
   align-items: center;
+  scroll-margin-top: 60px;
 }
 .skills > .right {
   height: 80%;
@@ -647,40 +580,62 @@ nav ul li {
 /* ******* PROJECTS ****** */
 @media (max-width: 1024px) {
   .projects {
-    height: 100% !important;
+    height: auto !important;
+    background: url("./images/amza-andrei-Bss5nhYnLKU-unsplash.jpg") !important;
+    background-size: contain !important;
+    background-attachment: fixed !important;
+  }
+  .projects > h1 {
+    color: white !important;
+  }
+  .projects-container {
+    padding: 40px 0 !important;
+  }
+  .projects-container-child {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 50px;
+    /* height: 55%; */
+  }
+  .card {
+    height: 400px !important;
+    width: 280px !important;
+  }
+  .projects p,
+  .projects h6,
+  .projects li {
+    font-size: 15px !important;
   }
 }
 .projects {
   background-color: white;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  /* min-height: 100vh; */
-  padding: 40px 20px;
-}
-.projects-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 40px;
+  height: 91vh;
+  padding: 20px;
+  scroll-margin-top: 65px;
 }
 
 .projects-container {
-  width: 100%;
   height: 100%;
+  width: 90%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 100px;
+  align-items: center;
+}
+.projects-container-child {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card {
   width: 250px;
-  height: 70%;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 15px -8px black;
   display: flex;
@@ -695,14 +650,14 @@ nav ul li {
 }
 
 .top {
-  height: auto;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .top h1 {
-  width: 80%;
+  font-size: 27px;
+  font-weight: bold;
 }
 .icon {
   height: 30px !important;
@@ -718,14 +673,25 @@ nav ul li {
   font-family: sans-serif;
   line-height: normal;
 }
+.center > ol {
+  margin-bottom: 0;
+}
 
 .bottom {
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .bottom {
+    border-radius: 10px !important;
+    background-color: rgb(87, 170, 87) !important;
+  }
+}
+
 .bottom a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
+  display: block;
 }
 .bottom:hover {
   background-color: rgb(87, 170, 87);
@@ -734,34 +700,40 @@ nav ul li {
 
 /* ********* CONTACT ********** */
 @media (max-width: 1024px) {
-  .contact .right form {
+  .contact .contact-child-right form {
     width: 85% !important;
   }
-  .right h2 {
+  .contact-child-right h2 {
     font-size: 30px !important;
   }
-  .right form {
+  .contact-child-right form {
     /* width: 100% !important; */
   }
   .contact .left img {
     height: 450px !important;
     width: 450px !important;
   }
-  .right .submit-form button {
+  .contact-child-right .submit-form button {
     font-size: 18px !important;
   }
 }
-@media (max-width: 834px) {
+@media (max-width: 991px) {
+  .contact {
+    height: auto !important;
+    flex-direction: column !important;
+  }
 }
 
 .contact {
   background-color: rgb(140, 228, 240);
+  min-height: 100vh;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
+  scroll-margin-top: 60px;
 }
 
 .left {
@@ -779,9 +751,10 @@ nav ul li {
 .contact-left-img-wrapper img {
   width: 500px;
   height: 500px;
+  contain: size;
 }
 
-.right {
+.contact-child-right {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -789,11 +762,11 @@ nav ul li {
   align-items: center;
 }
 
-.right h2 {
+.contact-child-right h2 {
   font-size: 40px;
   font-family: "LuloCleanW01-OneBold";
 }
-.right form {
+.contact-child-right form {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -802,12 +775,12 @@ nav ul li {
   align-items: center;
 }
 
-.right form input:focus,
-.right form textarea:focus {
+.contact-child-right form input:focus,
+.contact-child-right form textarea:focus {
   outline: none;
 }
 
-.right form input {
+.contact-child-right form input {
   width: 94%;
   height: 39px;
   font-size: 18px;
@@ -817,7 +790,7 @@ nav ul li {
   border-radius: 10px;
   margin: 10px;
 }
-.right form textarea {
+.contact-child-right form textarea {
   width: 94%;
   height: 200px;
   font-size: 18px;
@@ -828,7 +801,7 @@ nav ul li {
   vertical-align: top;
   margin: 10px;
 }
-.right form button {
+.contact-child-right form button {
   width: 94%;
   height: 40px;
   font-size: 20px;
@@ -839,7 +812,7 @@ nav ul li {
   margin: 10px;
   letter-spacing: 2px;
 }
-.right form label {
+.contact-child-right form label {
   padding: 0 0 0 10px;
   font-weight: 500;
 }
@@ -851,7 +824,7 @@ nav ul li {
   width: 70%;
 }
 
-.right form .text-danger {
+.contact-child-right form .text-danger {
   padding-left: 10px;
   font-weight: normal !important;
 }
@@ -860,3 +833,23 @@ nav ul li {
 .submit .text-success {
   align-self: center;
 }
+
+/************ LOADING SITE ************/
+.loading-site {
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/************ MAIN DIV ************/
+/* .main {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+}
+
+.main > div {
+  scroll-snap-align: start;
+} */

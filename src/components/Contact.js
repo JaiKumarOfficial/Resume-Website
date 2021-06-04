@@ -50,7 +50,7 @@ function Contact() {
             <img src={image} alt="contact-image"></img>
           </div>
         </div>
-        <div className="right">
+        <div className="contact-child-right">
           <h2>Contact</h2>
           <form onSubmit={handleSubmit}>
             <div className="email-label-input">

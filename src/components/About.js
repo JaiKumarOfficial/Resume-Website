@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/IMG_0580.jpg";
+import { about_me_content } from "../data/project_data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -15,9 +16,9 @@ const About = () => {
         <div className="flex-child1"></div>
         <div className="flex-child2">
           <div className="child2-container">
-            <h1>Hello</h1>
-            <h4>Here's who I am & what I do</h4>
-            <p>afshasldhad</p>
+            <h1>{about_me_content.title}</h1>
+            <h4>{about_me_content.subtitle}</h4>
+            <p>{about_me_content.description}</p>
           </div>
         </div>
         <div className="about-card">

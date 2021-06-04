@@ -9,6 +9,15 @@ import nodejsImg from "../images/nodejs.svg";
 import mongodbImg from "../images/mongodb.svg";
 import flaskImg from "../images/flask.svg";
 
+const about_me_content = {
+  title: "Hello",
+  subtitle: "Here's who I am & what I do.",
+  description: `A skilled, knowledgeable, and qualified graduate student with
+   extensive background in computer programming and project management.
+    Seeking a challenging position as computer programmer to utilize my
+     knowledge in a well reputed organization.`,
+};
+
 const project_data = [
   {
     id: 1,
@@ -172,4 +181,4 @@ const timeline_data = [
   },
 ];
 
-export { project_data, skills, timeline_data };
+export { about_me_content, project_data, skills, timeline_data };
