@@ -51,7 +51,7 @@ function Contact() {
           </div>
         </div>
         <div className="contact-child-right">
-          <h2>Contact</h2>
+          <h2 className="title">CONTACT</h2>
           <form onSubmit={handleSubmit}>
             <div className="email-label-input">
               <label>

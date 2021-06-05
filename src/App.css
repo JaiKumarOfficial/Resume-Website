@@ -12,7 +12,8 @@
   --dark-grey-custom: "#333333";
 }
 .title {
-  font-family: "LuloCleanW01-OneBold, Anton, Caveat";
+  font-family: "Anton";
+  letter-spacing: 15px;
 }
 
 /********************************************* NAVBAR */
@@ -26,8 +27,9 @@
   /* margin-left: 25px; */
   font-weight: 500;
   /* font-family: "Caveat"; */
-  font-family: "LuloCleanW01-OneBold, Anton, Caveat";
+  font-family: "Anton";
   font-size: 25px;
+  letter-spacing: 10px;
 }
 
 .navbar-nav {
@@ -95,7 +97,8 @@ nav ul li {
   color: white;
   text-transform: uppercase;
   font-size: 60px;
-  font-family: "LuloCleanW01-OneBold, Anton, Caveat";
+  font-family: "Anton";
+  letter-spacing: 20px;
 }
 
 .typed-text {
@@ -154,7 +157,6 @@ nav ul li {
 }
 
 /******************************* ABOUT  */
-
 @media (max-width: 376px) {
   .child2-container h1 {
     font-size: 40px !important;
@@ -586,12 +588,6 @@ nav ul li {
 }
 /* ******* PROJECTS ****** */
 @media (max-width: 1024px) {
-  .projects {
-    height: auto !important;
-    background: url("./images/amza-andrei-Bss5nhYnLKU-unsplash.jpg") !important;
-    background-size: contain !important;
-    background-attachment: fixed !important;
-  }
   .projects > h1 {
     color: white !important;
   }
@@ -771,7 +767,6 @@ nav ul li {
 
 .contact-child-right h2 {
   font-size: 40px;
-  font-family: "LuloCleanW01-OneBold, Caveat";
 }
 .contact-child-right form {
   display: flex;

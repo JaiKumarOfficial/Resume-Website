@@ -23,25 +23,7 @@ export default function SkillCard(props) {
   return (
     <div className="skill-card">
       <img src={props.data.skillImg || "#"} alt={props.data.alt}></img>
-      {/* <p>skill bar</p> */}
-      <div className="skillBar">
-        {renderSkillBar(props.data.skillBar)}
-        {/* <div className="skillBar-dot-1-out">
-          <div className="skillBar-dot-1-in"></div>
-        </div>
-        <div className="skillBar-dot-1-out">
-          <div className="skillBar-dot-1-in"></div>
-        </div>
-        <div className="skillBar-dot-1-out">
-          <div className="skillBar-dot-1-in"></div>
-        </div>
-        <div className="skillBar-dot-1-out">
-          <div className="skillBar-dot-1-in"></div>
-        </div>
-        <div className="skillBar-dot-1-out">
-          <div className="skillBar-dot-1-in"></div>
-        </div> */}
-      </div>
+      <div className="skillBar">{renderSkillBar(props.data.skillBar)}</div>
     </div>
   );
 }

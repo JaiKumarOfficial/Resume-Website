@@ -9,7 +9,7 @@ function Skills() {
   return (
     <>
       <div id="skills" className="skills">
-        <h1 className="title">Skills</h1>
+        <h1 className="title">SKILLS</h1>
         <div className="right">
           <div className="skills-container">{skill_cards}</div>
         </div>
