@@ -5,7 +5,7 @@
   --dark-grey-custom: "#333333";
 }
 .title {
-  font-family: "LuloCleanW01-OneBold";
+  font-family: "LuloCleanW01-OneBold, Caveat";
 }
 
 /********************************************* NAVBAR */
@@ -19,7 +19,7 @@
   /* margin-left: 25px; */
   font-weight: 500;
   /* font-family: "Caveat"; */
-  font-family: "LuloCleanW01-OneBold";
+  font-family: "LuloCleanW01-OneBold, Caveat";
   font-size: 25px;
 }
 
@@ -88,7 +88,7 @@ nav ul li {
   color: white;
   text-transform: uppercase;
   font-size: 60px;
-  font-family: "LuloCleanW01-OneBold";
+  font-family: "LuloCleanW01-OneBold, Caveat";
 }
 
 .typed-text {
@@ -706,9 +706,9 @@ nav ul li {
   .contact-child-right h2 {
     font-size: 30px !important;
   }
-  .contact-child-right form {
-    /* width: 100% !important; */
-  }
+  /* .contact-child-right form {
+    width: 100% !important;
+  } */
   .contact .left img {
     height: 450px !important;
     width: 450px !important;
@@ -764,7 +764,7 @@ nav ul li {
 
 .contact-child-right h2 {
   font-size: 40px;
-  font-family: "LuloCleanW01-OneBold";
+  font-family: "LuloCleanW01-OneBold, Caveat";
 }
 .contact-child-right form {
   display: flex;
