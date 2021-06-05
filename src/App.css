@@ -127,6 +127,9 @@ nav ul li {
 }
 
 @media (max-width: 768px) {
+  .header-wrapper {
+    background-position-x: -250px;
+  }
   .main-info h1 {
     font-size: 60px !important;
   }
@@ -157,71 +160,6 @@ nav ul li {
 }
 
 /******************************* ABOUT  */
-@media (max-width: 376px) {
-  .child2-container h1 {
-    font-size: 40px !important;
-  }
-  .child2-container h4 {
-    font-size: 15px !important;
-  }
-  .child2-container p {
-    font-size: 12px !important;
-  }
-  .about-card {
-    width: 60% !important;
-    height: 40% !important;
-    right: 20% !important;
-  }
-  .flex-container {
-    height: 812px !important;
-    flex-direction: column !important;
-  }
-  .flex-child2 {
-    padding-top: 50px !important;
-  }
-  .about-center > h4 {
-    font-size: 30px !important;
-  }
-}
-@media (max-width: 540px) {
-  .flex-container {
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .flex-child2 .child2-container h1 {
-    font-size: 40px !important;
-  }
-  .child2-container h4 {
-    font-size: 14px !important;
-  }
-  .child2-container p {
-    font-size: 12px !important;
-  }
-  .about-card {
-    max-height: 45% !important;
-    width: 35% !important;
-    top: 10% !important;
-    right: auto !important;
-  }
-  .about-image {
-    background-size: 250px !important;
-    background-position: 60% 20%, center !important ;
-  }
-  .about-center h4 {
-    font-size: 25px !important;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1044px) {
-  .about-card {
-    width: 33% !important;
-    height: 50% !important;
-    top: 25% !important;
-  }
-  .flex-child2 {
-    padding-top: 33% !important;
-  }
-}
 
 .flex-container {
   display: flex;
@@ -321,6 +259,86 @@ nav ul li {
   transform: scale(1.5);
 }
 
+@media (min-width: 768px) and (max-width: 1044px) {
+  .about-card {
+    width: 33%;
+    height: 50%;
+    top: 25%;
+  }
+  .flex-child2 {
+    padding-top: 33%;
+  }
+}
+@media (max-width: 540px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-child2 .child2-container h1 {
+    font-size: 40px;
+  }
+  .child2-container h4 {
+    font-size: 14px;
+  }
+  .child2-container p {
+    font-size: 12px;
+  }
+  .about-card {
+    max-height: 45%;
+    width: 35%;
+    top: 10%;
+    right: auto;
+  }
+  .about-image {
+    background-size: 250px;
+    background-position: 60% 20%, center;
+  }
+  .about-center h4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 376px) {
+  .child2-container h1 {
+    font-size: 40px;
+  }
+  .child2-container h4 {
+    font-size: 15px;
+  }
+  .child2-container p {
+    font-size: 12px;
+  }
+  .about-card {
+    width: 60%;
+    height: 40%;
+    right: 20%;
+  }
+  .flex-container {
+    height: 812px;
+    flex-direction: column;
+  }
+  .flex-child2 {
+    padding-top: 50px;
+  }
+  .about-center > h4 {
+    font-size: 30px;
+  }
+}
+@media (orientation: landscape) and (max-width: 1030px) {
+  .about-me .flex-child2 {
+    position: static;
+    padding-top: 110px;
+  }
+  .about-me .flex-child2 .child2-container {
+    width: 50%;
+    position: static;
+  }
+  .about-card {
+    width: 30%;
+    height: 66%;
+    top: 15%;
+  }
+}
 /* *********** TIMELINE ******** */
 
 @media (max-width: 539px) {
@@ -587,32 +605,9 @@ nav ul li {
   border-radius: 50%;
 }
 /* ******* PROJECTS ****** */
-@media (max-width: 1024px) {
-  .projects > h1 {
-    color: white !important;
-  }
-  .projects-container {
-    padding: 40px 0 !important;
-  }
-  .projects-container-child {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 50px;
-    /* height: 55%; */
-  }
-  .card {
-    height: 400px !important;
-    width: 280px !important;
-  }
-  .projects p,
-  .projects h6,
-  .projects li {
-    font-size: 15px !important;
-  }
-}
+
 .projects {
   background-color: white;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -699,6 +694,39 @@ nav ul li {
 .bottom:hover {
   background-color: rgb(87, 170, 87);
   border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+  .projects {
+    height: auto;
+  }
+  .projects-container {
+    padding: 40px 0;
+    width: 75%;
+  }
+  .projects-container-child {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    /* height: 55%; */
+  }
+  .card {
+    height: 400px;
+    width: 280px;
+  }
+  .projects p,
+  .projects h6,
+  .projects li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 856px) {
+  .projects-container {
+    width: 90%;
+  }
+  .projects-container-child {
+    flex-direction: column;
+  }
 }
 
 /* ********* CONTACT ********** */
