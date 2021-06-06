@@ -71,18 +71,18 @@ nav ul li {
 .header-wrapper {
   position: relative;
   /* background: url("./images/1567665.png"); */
-  /* background: url("./images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  background: url("./images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   /* opacity: 93.1%; */
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   height: 100vh;
 }
 
-.image-wrapper {
+/* .image-wrapper {
   object-fit: cover;
   width: 100%;
-}
+} */
 .main-info {
   display: flex;
   flex-direction: column;
