@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
+  const closeNavbar = () => {
+    document.querySelector(".navbar-collapse").classList.remove("show");
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -28,32 +32,32 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#home">
+              <a className="nav-link" href="#home" onClick={closeNavbar}>
                 Home<span className="sr-only"></span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <a className="nav-link" href="#about" onClick={closeNavbar}>
                 about
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#timeline">
+              <a className="nav-link" href="#timeline" onClick={closeNavbar}>
                 Timeline
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
+              <a className="nav-link" href="#skills" onClick={closeNavbar}>
                 skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a className="nav-link" href="#projects" onClick={closeNavbar}>
                 projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href="#contact" onClick={closeNavbar}>
                 Contact
               </a>
             </li>

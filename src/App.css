@@ -247,7 +247,7 @@ nav ul li {
 
 .card-links {
   display: flex;
-  gap: 25px;
+  padding: 0 10px;
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
@@ -279,14 +279,17 @@ nav ul li {
     justify-content: center;
     align-items: center;
   }
+  .child2-container {
+    width: 50%;
+  }
   .flex-child2 .child2-container h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .child2-container h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   .child2-container p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .about-card {
     max-height: 45%;
@@ -302,27 +305,47 @@ nav ul li {
     font-size: 25px;
   }
 }
+
+@media (min-width: 377px) and (max-width: 539px) {
+  .flex-container {
+    height: 812px;
+  }
+  .flex-child1 {
+    flex-basis: 85%;
+  }
+  .flex-child2 {
+    padding-top: 65px;
+  }
+  .about-card {
+    height: 40%;
+    width: 200px;
+  }
+}
+
 @media (max-width: 376px) {
-  .child2-container h1 {
-    font-size: 40px;
+  .flex-container {
+    height: 812px;
+  }
+  .child2-container {
+    width: 45%;
+  }
+  .flex-child2 .child2-container h1 {
+    font-size: 45px;
   }
   .child2-container h4 {
-    font-size: 15px;
+    font-size: 18px;
   }
   .child2-container p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .about-card {
     width: 60%;
     height: 40%;
     right: 20%;
-  }
-  .flex-container {
-    height: 812px;
-    flex-direction: column;
+    top: 15%;
   }
   .flex-child2 {
-    padding-top: 50px;
+    padding-top: 70px;
   }
   .about-center > h4 {
     font-size: 30px;
@@ -332,9 +355,10 @@ nav ul li {
   .about-me .flex-child2 {
     position: static;
     padding-top: 110px;
+    font-size: 13px;
   }
   .about-me .flex-child2 .child2-container {
-    width: 50%;
+    width: 60%;
     position: static;
   }
   .about-card {
@@ -836,9 +860,10 @@ nav ul li {
   font-weight: normal !important;
 }
 
-.submit .text-danger,
-.submit .text-success {
+.submit-form .text-danger,
+.submit-form .text-success {
   align-self: center;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .contact .contact-child-right form {

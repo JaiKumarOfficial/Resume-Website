@@ -5,10 +5,22 @@ import emailjs from "emailjs-com";
 import validator from "validator";
 
 function Contact() {
+  const [emailInput, setEmailInput] = useState("");
+  const [messageInput, setMessageInput] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [contactMessageError, setContactMessageError] = useState("");
+
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    if (e.target.name === "from_name") {
+      setEmailInput(e.target.value);
+    }
+    if (e.target.name === "message") {
+      setMessageInput(e.target.value);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,10 +29,10 @@ function Contact() {
     const email_from = e.target.from_name.value;
     const contact_message = e.target.message.value;
     if (!validator.isEmail(email_from)) {
-      setEmailError("*Invalid");
+      setEmailError("Invalid");
     }
     if (validator.isEmpty(contact_message)) {
-      setContactMessageError("*Required");
+      setContactMessageError("Required");
     }
     if (validator.isEmail(email_from) && contact_message) {
       emailjs
@@ -33,6 +45,8 @@ function Contact() {
         .then(
           (result) => {
             setMessage("Thanks, I'll reply ASAP!");
+            setEmailInput("");
+            setMessageInput("");
           },
           (error) => {
             setError(true);
@@ -62,7 +76,13 @@ function Contact() {
                   ""
                 )}
               </label>
-              <input name="from_name" type="text" placeholder="Email" />
+              <input
+                name="from_name"
+                type="text"
+                placeholder="Email"
+                value={emailInput}
+                onChange={handleChange}
+              />
             </div>
             <div className="message-label-textarea">
               <label>
@@ -73,7 +93,12 @@ function Contact() {
                   ""
                 )}
               </label>
-              <textarea name="message" placeholder="Message"></textarea>
+              <textarea
+                name="message"
+                placeholder="Message"
+                value={messageInput}
+                onChange={handleChange}
+              ></textarea>
             </div>
             <div className="submit-form">
               <button type="submit">Submit</button>
