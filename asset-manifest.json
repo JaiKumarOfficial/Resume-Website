@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Resume-Website/static/css/main.877ffa1c.chunk.css",
+    "main.css": "/Resume-Website/static/css/main.d72c77fc.chunk.css",
     "main.js": "/Resume-Website/static/js/main.0a94dd28.chunk.js",
     "main.js.map": "/Resume-Website/static/js/main.0a94dd28.chunk.js.map",
     "runtime-main.js": "/Resume-Website/static/js/runtime-main.46062a4e.js",
@@ -10,7 +10,7 @@
     "static/js/2.95a59b6e.chunk.js.map": "/Resume-Website/static/js/2.95a59b6e.chunk.js.map",
     "index.html": "/Resume-Website/index.html",
     "static/css/2.61b4cb56.chunk.css.map": "/Resume-Website/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.877ffa1c.chunk.css.map": "/Resume-Website/static/css/main.877ffa1c.chunk.css.map",
+    "static/css/main.d72c77fc.chunk.css.map": "/Resume-Website/static/css/main.d72c77fc.chunk.css.map",
     "static/js/2.95a59b6e.chunk.js.LICENSE.txt": "/Resume-Website/static/js/2.95a59b6e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Resume-Website/static/media/jefferson-santos-9SoCnyQmkzI-unsplash.b76e6ffc.jpg",
     "static/media/c++.c4a42e13.svg": "/Resume-Website/static/media/c++.c4a42e13.svg",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.46062a4e.js",
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.95a59b6e.chunk.js",
-    "static/css/main.877ffa1c.chunk.css",
+    "static/css/main.d72c77fc.chunk.css",
     "static/js/main.0a94dd28.chunk.js"
   ]
 }
