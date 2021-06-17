@@ -1,10 +1,18 @@
 import React from "react";
 import Typed from "react-typed";
-import homeImg from "../images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const homeImg = {
+    background: `url(${process.env.PUBLIC_URL}/left_macbook_back_35.jpg)`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+  };
+
   return (
-    <div id="home" className="header-wrapper">
+    <div id="home" className="header-wrapper" style={homeImg}>
       <div className="image-wrapper">
         {/* <img src={homeImg} alt="home-img"></img> */}
       </div>
@@ -15,6 +23,7 @@ const Header = () => {
           strings={[
             "Full Stack Developer",
             "Python",
+            "JavaScript",
             "React",
             "C++",
             "Node JS",
@@ -23,9 +32,18 @@ const Header = () => {
           backSpeed={40}
           loop
         />
-        <a href="#contact" className="btn-main-offer">
-          CONTACT
-        </a>
+        <div style={{ display: "flex" }}>
+          <a href="#contact" className="btn-main-offer">
+            <FontAwesomeIcon icon={faEnvelope} /> CONTACT
+          </a>
+          <a
+            href={process.env.PUBLIC_URL + "/Resume.pdf"}
+            className="btn-main-offer"
+            download="Jai-Resume"
+          >
+            <FontAwesomeIcon icon={faDownload} /> RESUME
+          </a>
+        </div>
       </div>
     </div>
   );

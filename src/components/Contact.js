@@ -3,6 +3,8 @@ import { useState } from "react";
 import image from "../images/shake.svg";
 import emailjs from "emailjs-com";
 import validator from "validator";
+import { TextField } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 function Contact() {
   const [emailInput, setEmailInput] = useState("");
@@ -19,6 +21,9 @@ function Contact() {
     }
     if (e.target.name === "message") {
       setMessageInput(e.target.value);
+      if (e.target.value.trim()) {
+        setContactMessageError("");
+      }
     }
   };
 
@@ -68,6 +73,31 @@ function Contact() {
           <h2 className="title">CONTACT</h2>
           <form onSubmit={handleSubmit}>
             <div className="email-label-input">
+              <TextField
+                id="standard-basic"
+                label="Email"
+                name="from_name"
+                value={emailInput}
+                onChange={handleChange}
+                error={emailError ? true : false}
+                helperText={emailError ? emailError : ""}
+                autoComplete="off"
+              />
+            </div>
+            <div className="message-label-textarea">
+              <TextField
+                id="standard-multiline-static"
+                name="message"
+                label="Message"
+                value={messageInput}
+                onChange={handleChange}
+                multiline={true}
+                rows={4}
+                error={contactMessageError ? true : false}
+                helperText={contactMessageError ? contactMessageError : ""}
+              />
+            </div>
+            {/* <div className="email-label-input">
               <label>
                 Email*
                 {emailError ? (
@@ -83,8 +113,8 @@ function Contact() {
                 value={emailInput}
                 onChange={handleChange}
               />
-            </div>
-            <div className="message-label-textarea">
+            </div> */}
+            {/* <div className="message-label-textarea">
               <label>
                 Message*
                 {contactMessageError ? (
@@ -99,9 +129,11 @@ function Contact() {
                 value={messageInput}
                 onChange={handleChange}
               ></textarea>
-            </div>
+            </div> */}
             <div className="submit-form">
-              <button type="submit">Submit</button>
+              <Button variant="contained" color="primary" type="submit">
+                send
+              </Button>
               {message ? (
                 <span
                   className={

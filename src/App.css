@@ -70,12 +70,11 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  /* background: url("./images/1567665.png"); */
-  background: url("./images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg");
-  background-size: cover;
+  /* background: url("/left_macbook_back_35.jpg"); */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 93.1%; */
-  background-attachment: fixed;
+  opacity: 93.1%;
+  background-attachment: fixed; */
   height: 100vh;
 }
 
@@ -830,6 +829,7 @@ nav ul li {
   width: 70%;
   padding-top: 20px;
   align-items: center;
+  gap: 1rem;
 }
 
 .contact-child-right form input:focus,
@@ -837,7 +837,7 @@ nav ul li {
   outline: none;
 }
 
-.contact-child-right form input {
+/* .contact-child-right form input {
   width: 94%;
   height: 39px;
   font-size: 18px;
@@ -857,8 +857,8 @@ nav ul li {
   border-radius: 10px;
   vertical-align: top;
   margin: 10px;
-}
-.contact-child-right form button {
+} */
+/* .contact-child-right form button {
   width: 94%;
   height: 40px;
   font-size: 20px;
@@ -868,11 +868,21 @@ nav ul li {
   border-radius: 10px;
   margin: 10px;
   letter-spacing: 2px;
+} */
+
+.contact-child-right form button {
+  font-weight: 600;
+  letter-spacing: 5px;
+  background-color: rgb(47, 180, 58);
 }
-.contact-child-right form label {
+.contact-child-right form button:hover {
+  background-color: rgb(35, 223, 51);
+}
+
+/* .contact-child-right form label {
   padding: 0 0 0 10px;
   font-weight: 500;
-}
+} */
 .email-label-input,
 .message-label-textarea,
 .submit-form {
@@ -890,6 +900,7 @@ nav ul li {
 .submit-form .text-success {
   align-self: center;
   text-align: center;
+  font-style: italic;
 }
 @media (max-width: 1024px) {
   .contact .contact-child-right form {
