@@ -778,6 +778,11 @@ nav ul li {
     width: 90%;
   }
 }
+@media (orientation: landscape) and (max-height: 720px) {
+  .projects .card .center {
+    font-size: 15px;
+  }
+}
 
 /* ********* CONTACT ********** */
 
