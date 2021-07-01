@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Resume-Website/static/css/main.fe4a396c.chunk.css",
-    "main.js": "/Resume-Website/static/js/main.849822d7.chunk.js",
-    "main.js.map": "/Resume-Website/static/js/main.849822d7.chunk.js.map",
+    "main.css": "/Resume-Website/static/css/main.0bdb2acb.chunk.css",
+    "main.js": "/Resume-Website/static/js/main.7a77482b.chunk.js",
+    "main.js.map": "/Resume-Website/static/js/main.7a77482b.chunk.js.map",
     "runtime-main.js": "/Resume-Website/static/js/runtime-main.46062a4e.js",
     "runtime-main.js.map": "/Resume-Website/static/js/runtime-main.46062a4e.js.map",
     "static/css/2.61b4cb56.chunk.css": "/Resume-Website/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.7521ca0a.chunk.js": "/Resume-Website/static/js/2.7521ca0a.chunk.js",
-    "static/js/2.7521ca0a.chunk.js.map": "/Resume-Website/static/js/2.7521ca0a.chunk.js.map",
+    "static/js/2.a0e32eed.chunk.js": "/Resume-Website/static/js/2.a0e32eed.chunk.js",
+    "static/js/2.a0e32eed.chunk.js.map": "/Resume-Website/static/js/2.a0e32eed.chunk.js.map",
     "index.html": "/Resume-Website/index.html",
     "static/css/2.61b4cb56.chunk.css.map": "/Resume-Website/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.fe4a396c.chunk.css.map": "/Resume-Website/static/css/main.fe4a396c.chunk.css.map",
-    "static/js/2.7521ca0a.chunk.js.LICENSE.txt": "/Resume-Website/static/js/2.7521ca0a.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Resume-Website/static/media/IMG_0580.eef0624b.jpg",
+    "static/css/main.0bdb2acb.chunk.css.map": "/Resume-Website/static/css/main.0bdb2acb.chunk.css.map",
+    "static/js/2.a0e32eed.chunk.js.LICENSE.txt": "/Resume-Website/static/js/2.a0e32eed.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Resume-Website/static/media/CaveatBrush-Regular.e7b95c0f.ttf",
+    "static/media/IMG_0580.eef0624b.jpg": "/Resume-Website/static/media/IMG_0580.eef0624b.jpg",
     "static/media/c++.c4a42e13.svg": "/Resume-Website/static/media/c++.c4a42e13.svg",
     "static/media/django.f377f96c.svg": "/Resume-Website/static/media/django.f377f96c.svg",
     "static/media/flask.fe57ef08.svg": "/Resume-Website/static/media/flask.fe57ef08.svg",
@@ -28,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.46062a4e.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.7521ca0a.chunk.js",
-    "static/css/main.fe4a396c.chunk.css",
-    "static/js/main.849822d7.chunk.js"
+    "static/js/2.a0e32eed.chunk.js",
+    "static/css/main.0bdb2acb.chunk.css",
+    "static/js/main.7a77482b.chunk.js"
   ]
 }
