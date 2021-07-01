@@ -24,10 +24,12 @@ function setIcon(icon) {
       return (
         <FontAwesomeIcon icon={faUsers} color="#6ea6ea" className="icon" />
       );
+    default:
+      return null;
   }
 }
 
-export default function Project_cards(props) {
+export default function ProjectCards(props) {
   const icon = props.data.icon;
   return (
     <>

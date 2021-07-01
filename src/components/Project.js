@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from "react";
-import Project_cards from "./Project_cards";
+import ProjectCards from "./ProjectCards";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 function Projects(props) {
   const [current, SetCurrent] = useState(0);
-  const [size, setSize] = useState("");
+  const [size, setSize] = useState("small");
   const [left, setLeft] = useState(0);
   const [center, setCenter] = useState(1);
   const [right, setRight] = useState(2);
   const len = props.data.length - 1;
 
   const project_card = props.data.map((project, idx) => {
-    return idx === current && <Project_cards key={project.id} data={project} />;
+    return idx === current && <ProjectCards key={project.id} data={project} />;
   });
 
   const project_card_left = props.data.map((project, idx) => {
     return (
       idx === left && (
-        <Project_cards key={project.id} data={project} className="side-slide" />
+        <ProjectCards key={project.id} data={project} className="side-slide" />
       )
     );
   });
   const project_card_center = props.data.map((project, idx) => {
     return (
       idx === center && (
-        <Project_cards
+        <ProjectCards
           key={project.id}
           data={project}
           className="center-slide"
@@ -36,7 +36,7 @@ function Projects(props) {
   const project_card_right = props.data.map((project, idx) => {
     return (
       idx === right && (
-        <Project_cards key={project.id} data={project} className="side-slide" />
+        <ProjectCards key={project.id} data={project} className="side-slide" />
       )
     );
   });

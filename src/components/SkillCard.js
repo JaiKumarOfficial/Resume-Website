@@ -1,5 +1,4 @@
 import React from "react";
-import pythonImg from "../images/python.svg";
 
 export default function SkillCard(props) {
   function renderSkillBar(skill) {
