@@ -27,13 +27,13 @@ const project_data = [
     detail: `This is an Analytical tool which uses Twitter API to perform
         certain Analysis on twitter users which can be further used for
         marketing.`,
-    listTitle: "Functions",
-    list: [
-      "Search potential users via keywords",
-      "Tweet",
-      "Send Direct message to selected users from search results",
-      "Tweet scheduling",
-    ],
+    // listTitle: "Functions",
+    // list: [
+    //   "Search potential users via keywords",
+    //   "Tweet",
+    //   "Send Direct message to selected users from search results",
+    //   "Tweet scheduling",
+    // ],
     link: "https://github.com/JaiKumarOfficial/Tweetal",
   },
   {
@@ -66,6 +66,15 @@ const project_data = [
     Implemented OOPS fundamentals & python classes. 
     Game covers all possible draw cases as well.`,
     link: "https://github.com/JaiKumarOfficial/PokerGame",
+  },
+  {
+    id: 5,
+    title: "Social Block",
+    icon: "faUsers",
+    iconColor: "blue",
+    detail: `MERN Full Stack web application with CRUD functionality.
+    Social Block is social media platform to interact with people and socialize.`,
+    link: "https://github.com/JaiKumarOfficial/social-block",
   },
 ];
 

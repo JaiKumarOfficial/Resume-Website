@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Component } from "react";
+import { Component, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Particles from "react-particles-js";
@@ -12,52 +12,45 @@ import Contact from "./components/Contact";
 import { project_data } from "./data/project_data";
 import LoadingSite from "./components/LoadingSite";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoading: true,
-    };
-  }
+function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
-  componentDidMount() {
+  useEffect(() => {
     setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 2500);
-  }
+      setIsLoading(false);
+    }, 2000);
+  });
 
-  render() {
-    return (
-      <>
-        {this.state.isLoading ? (
-          <LoadingSite />
-        ) : (
-          <div className="main">
-            <Particles
-              params={{
-                particles: {
-                  number: {
-                    value: 40,
-                    density: {
-                      enable: true,
-                      value_area: 900,
-                    },
+  return (
+    <>
+      {isLoading ? (
+        <LoadingSite />
+      ) : (
+        <div className="main">
+          <Particles
+            params={{
+              particles: {
+                number: {
+                  value: 40,
+                  density: {
+                    enable: true,
+                    value_area: 900,
                   },
                 },
-              }}
-            />
-            <Navbar />
-            <Header />
-            <About />
-            <Timeline />
-            <Skills />
-            <Projects data={project_data} />
-            <Contact />
-          </div>
-        )}
-      </>
-    );
-  }
+              },
+            }}
+          />
+          <Navbar />
+          <Header />
+          <About />
+          <Timeline />
+          <Skills />
+          <Projects data={project_data} />
+          <Contact />
+        </div>
+      )}
+    </>
+  );
 }
 
 export default App;

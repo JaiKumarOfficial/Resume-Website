@@ -5,6 +5,7 @@ import {
   faBalanceScale,
   faBook,
   faCoins,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 function setIcon(icon) {
@@ -19,6 +20,10 @@ function setIcon(icon) {
       return <FontAwesomeIcon icon={faBook} color="brown" className="icon" />;
     case "faCoins":
       return <FontAwesomeIcon icon={faCoins} color="green" className="icon" />;
+    case "faUsers":
+      return (
+        <FontAwesomeIcon icon={faUsers} color="#6ea6ea" className="icon" />
+      );
   }
 }
 
@@ -26,7 +31,7 @@ export default function Project_cards(props) {
   const icon = props.data.icon;
   return (
     <>
-      <div className="card">
+      <div className={`card ${props.className}`}>
         <div className="top">
           <h1>{props.data.title}</h1>
           {icon ? setIcon(icon) : ""}

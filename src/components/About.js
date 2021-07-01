@@ -24,7 +24,7 @@ const About = () => {
         <div className="about-card">
           <div className="image-container">
             <div className="about-image">
-              {/* <img src={image} alt="Profile Picture" /> */}
+              <img src={image} alt="Profile Picture" />
             </div>
           </div>
           <div className="about-center">

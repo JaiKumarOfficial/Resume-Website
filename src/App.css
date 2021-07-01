@@ -221,17 +221,23 @@ nav ul li {
   padding: 15px;
 }
 .about-image {
-  position: relative;
   display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
   border-radius: 10px;
   border: 2px solid black;
-  background-image: url("./images/IMG_0580.jpg");
+  overflow: hidden;
+  /* background-image: url("./images/IMG_0580.jpg");
   background-repeat: no-repeat;
   background-size: 400px;
   background-position-x: -81px;
-  background-position-y: -93px;
+  background-position-y: -93px; */
+}
+.about-image > img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
 }
 
 .about-card > .about-center {
@@ -671,17 +677,41 @@ nav ul li {
 
 .projects-container {
   height: 100%;
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* position: relative; */
+}
+.arrow-left {
+  position: absolute;
+  left: -1rem;
+  cursor: pointer;
+}
+.arrow-right {
+  position: absolute;
+  right: calc(-1rem - 7px);
+  cursor: pointer;
+}
+.test {
+  height: 100%;
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.test.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.1);
 }
 .projects-container-child {
   height: 75%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 1.2rem;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  margin: 0 15px;
 }
 
 .card {
@@ -696,8 +726,11 @@ nav ul li {
   transition: all 0.5s ease;
   backface-visibility: hidden;
 }
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
+} */
+.card.side-slide {
+  transform: scale(0.85);
 }
 
 .top {
@@ -751,12 +784,11 @@ nav ul li {
     padding: 40px 0;
     width: 75%;
   }
-  .projects-container-child {
+  /* .projects-container-child {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3.2rem;
-    /* height: 55%; */
-  }
+  } */
   .card {
     height: 400px;
     width: 280px;
@@ -776,6 +808,11 @@ nav ul li {
 @media (max-width: 856px) {
   .projects-container {
     width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 250px;
   }
 }
 @media (orientation: landscape) and (max-height: 720px) {
