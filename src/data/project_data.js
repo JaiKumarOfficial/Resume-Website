@@ -109,10 +109,10 @@ const skills = [
   },
   {
     id: 5,
-    skill: "reactjs",
-    skillImg: reactjsImg,
-    alt: "reactjs-image",
-    skillBar: 4,
+    skill: "Docker",
+    skillImg: `${process.env.PUBLIC_URL}/images/docker.png`,
+    alt: "docker-image",
+    skillBar: 2,
   },
   {
     id: 6,
@@ -148,6 +148,13 @@ const skills = [
     skillImg: mongodbImg,
     alt: "mongodb-image",
     skillBar: 3,
+  },
+  {
+    id: 11,
+    skill: "reactjs",
+    skillImg: reactjsImg,
+    alt: "reactjs-image",
+    skillBar: 4,
   },
 ];
 

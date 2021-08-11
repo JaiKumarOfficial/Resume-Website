@@ -131,7 +131,12 @@ function Contact() {
               ></textarea>
             </div> */}
             <div className="submit-form">
-              <Button variant="contained" color="primary" type="submit">
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                disabled={emailInput && messageInput ? false : true}
+              >
                 send
               </Button>
               {message ? (

@@ -59,6 +59,8 @@ function Projects(props) {
       setSize(window.innerWidth < 1000 ? "small" : "large");
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

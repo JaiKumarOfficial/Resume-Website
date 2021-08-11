@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
-@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
 @font-face {
   font-family: "Caveat";
   src: url("./fonts/CaveatBrush-Regular.ttf");
@@ -167,7 +166,7 @@ nav ul li {
 .flex-container {
   display: flex;
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
   scroll-margin-top: 60px;
 }
 .flex-child1 {
@@ -235,8 +234,8 @@ nav ul li {
   background-position-y: -93px; */
 }
 .about-image > img {
-  height: 400px;
-  width: 400px;
+  /* height: 400px; */
+  width: 300px;
   object-fit: cover;
 }
 
@@ -563,10 +562,11 @@ nav ul li {
 /* ******* SKILLS ****** */
 
 .skills {
-  background-color: rgb(26, 22, 49);
+  /* background-color: rgb(26, 22, 49); */
+  background-color: rgb(36 35 42);
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  min-height: 85vh;
   padding: 30px;
   gap: 0.6rem;
   color: white;
@@ -574,6 +574,7 @@ nav ul li {
   scroll-margin-top: 60px;
 }
 .skills > .right {
+  flex: 1 1;
   height: 80%;
   display: flex;
   justify-content: center;
@@ -605,6 +606,7 @@ nav ul li {
 .skill-card img {
   height: 80px;
   width: 125px;
+  object-fit: contain;
 }
 
 .skillBar {
@@ -829,7 +831,7 @@ nav ul li {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 40px;
   scroll-margin-top: 60px;
@@ -845,12 +847,12 @@ nav ul li {
 .contact-left-img-wrapper {
   overflow: hidden;
   display: flex;
-  min-width: 0;
 }
 .contact-left-img-wrapper img {
   width: 500px;
-  height: 500px;
-  contain: size;
+  min-width: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 .contact-child-right {
@@ -879,39 +881,6 @@ nav ul li {
   outline: none;
 }
 
-/* .contact-child-right form input {
-  width: 94%;
-  height: 39px;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: inherit;
-  border: 2px dashed;
-  border-radius: 10px;
-  margin: 10px;
-}
-.contact-child-right form textarea {
-  width: 94%;
-  height: 200px;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: inherit;
-  border: 2px dashed;
-  border-radius: 10px;
-  vertical-align: top;
-  margin: 10px;
-} */
-/* .contact-child-right form button {
-  width: 94%;
-  height: 40px;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: rgb(35, 223, 51);
-  border: 2px dashed;
-  border-radius: 10px;
-  margin: 10px;
-  letter-spacing: 2px;
-} */
-
 .contact-child-right form button {
   font-weight: 600;
   letter-spacing: 5px;
@@ -920,11 +889,10 @@ nav ul li {
 .contact-child-right form button:hover {
   background-color: rgb(35, 223, 51);
 }
+.contact-child-right form button:disabled {
+  background-color: rgb(47, 180, 58);
+}
 
-/* .contact-child-right form label {
-  padding: 0 0 0 10px;
-  font-weight: 500;
-} */
 .email-label-input,
 .message-label-textarea,
 .submit-form {
@@ -950,13 +918,6 @@ nav ul li {
   }
   .contact-child-right h2 {
     font-size: 30px;
-  }
-  /* .contact-child-right form {
-    width: 100%;
-  } */
-  .contact .left img {
-    height: 450px;
-    width: 450px;
   }
   .contact-child-right .submit-form button {
     font-size: 18px;
